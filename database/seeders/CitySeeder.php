@@ -10,7 +10,7 @@ class CitySeeder extends Seeder
 {
     public function run()
     {
-        $cities = ['Ashgabat', 'Anew', 'Mary', 'Turkmenabat', 'Balkanabat'];
+        $cities = ['Ashgabat', 'Anew', 'Mary', 'Turkmenabat', 'Tejen', 'Balkanabat'];
         foreach ($cities as $city) {
             City::create(['name' => $city]);
         }
