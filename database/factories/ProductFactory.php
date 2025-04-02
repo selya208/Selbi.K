@@ -20,7 +20,6 @@ class ProductFactory extends Factory
         return [
             'restaurant_id' =>  Restaurant::inRandomOrder()->first()->id,
             'category_id' => Category::inRandomOrder()->first()->id,
-            'name' => $this->faker->word,
             'description' => $this->faker->sentence,
             'price' => $this->faker->randomFloat(2, 5, 50),
         ];
