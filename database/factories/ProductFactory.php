@@ -18,7 +18,7 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-            'restaurant_id' => Restaurant::inRandomOrder()->first()->id,
+            'restaurant_id' =>  Restaurant::inRandomOrder()->first()->id,
             'category_id' => Category::inRandomOrder()->first()->id,
             'name' => $this->faker->word,
             'description' => $this->faker->sentence,
